@@ -1,0 +1,14 @@
+.idea
+.DS_Store
+**/venv/**
+report
+**/__pycache__/**
+**/.pytest_cache/**
+**/archive/**
+*.log
+*.html
+output.json
+*.DS_Store
+downloads
+.env
+

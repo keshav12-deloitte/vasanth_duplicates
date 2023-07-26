@@ -1,0 +1,66 @@
+"""
+This module contains xpaths and constants involved in creating tasks and invitations
+"""
+# xpaths#
+
+XP_TASK_TAB = "//*[@class='mat-list-item-content']//*[contains(text(),'Task Inbox')]"
+XP_TASK_PAGE_HEADER = "//span[contains(text(),'To-Do')]"
+XP_UNREAD_TASK_COUNT = "(//div[@class='mat-list-item-content']//span//span[contains(@id,'mat-badge')])[2]"
+XP_TASK_LIST = "//tbody[@role='rowgroup']//tr[1]"
+XP_HOME_TAB = "(//div[@class='mat-list-item-content'])[1]"
+XP_TASK_STATUS = "(//div[contains(text(),'Sent Date')]/../../../..//following-sibling::tbody//td[5])[1]"
+XP_DASHBOARD = "//img[@alt='menu-icon']"
+XP_TASK_BAR = "//span[contains(text(),'Task Inbox')]"
+XP_TASK_DETAILS_TITLE = "//span[contains(text(),'To-Do')]"
+XP_CREATE_INVITATION_BTN = "//*[contains(text(),'Create Invitation')]"
+XP_SENT_INVITATION_FORM_HEADER = "//*[contains(text(),'Send Invitations')]//following-sibling::p"
+XP_TASK_DETAILS_PROJECT_NAME = "//*[contains(text(),' Invitation to participate in')]"
+XP_TASK_DETAILS_WORKFLOW = "//*[contains(text(),'Work Flow')]//following-sibling::p[1]"
+XP_TASK_DETAILS_MESSAGE = "//*[contains(text(),'Message')]//following-sibling::p[1]"
+XP_TASK_DETAILS_SENT_DATE = "//*[contains(text(),'Sent Date')]//following-sibling::p[1]"
+XP_TASK_DETAILS_ATTACHMENTS = "//*[contains(text(),'Attachment:')]//following-sibling::div//a"
+XP_DECLINE_GSP_BTN = "//*[contains(text(),'Decline GSP')]"
+XP_DECLINE_GSP_SUBMIT_BTN = "//*[contains(text(),'SUBMIT')]"
+XP_DECLINE_GSP_ERROR_MSG = "//*[contains(text(),'is a required property')]"
+XP_DECLINE_REASON_FIELD = "//input[@type='text']"
+XP_MEMBERS_BAR = "//a[contains(text(),'Members')]"
+XP_HA_RECIPIENT_BOX = "//input[@role='combobox']"
+XP_SELECT_HA_RECIPIENTS = "(//span[@class='mat-option-text'])[3]"
+XP_RESPONSE_DUE_DATE = "//button[@class='mat-focus-indicator mat-icon-button mat-button-base']"
+XP_OPTIONAL_MSG = "//input[contains(@id,'#/properties/message')]"
+XP_SPONSOR_NAME = "//*[contains(text(),'Sponsor Name:')]"
+XP_ATTACHMENTS = "//*[contains(text(),'Attachments:')]//following-sibling::span"
+XP_SEND_BTN = "//button[contains(text(),'Send')]"
+XP_PREPOPULATED_HA = "//*[contains(text(),'healthAuthority_1')]"
+XP_SENT_DATE_SORTED = "//*[contains(text(),'keyboard_arrow_down')]"
+XP_TASK_NAME = "//tr[@role='row']//th//div//div[contains(text(),'Task Name')]"
+XP_TASK_NAME_LIST = "//td[@role='cell']//div//div[contains(text(),'GSP Request Product')]"
+XP_KEYBOARD_ARROW = "//tr[@role='row']//th//div//div//mat-icon[contains(text(),'keyboard_arrow')]"
+XP_ARROW_COLUMN_NAME = "//tr[@role='row']//th//div//div//mat-icon/.."
+XP_CANCEL_INVITATION_POPUP_TITLE = "//div[contains(text(),'Save Invitation?')]"
+XP_YES_BTN = "//span[contains(text(),'YES')]"
+XP_NO_BTN = "//span[contains(text(),'NO')]"
+
+# S6
+XP_USER_LOGIN_ID = "//input[@id='login']"
+XP_USER_LOGIN_BUTTON = "//i[@class='material-icons-outlined f36']"
+XP_EMAIL_BODY = "//div[@id='mailctn']//p"
+XP_PROJECT_LINK = "//a[contains(text(),'https://dev.accumulus.app/projects/')]"
+XP_SEND_INVITATION_SHORTCUT = "//mat-card-title[contains(text(),'Send Invitations')]"
+XP_CREATE_INVITATION_BTN_ON_SHORTCUT = "//span[contains(text(),'CREATE INVITATION')]"
+XP_INVITATION_SEND_BTN = "//span[@class='mat-button-wrapper']//span[contains(text(),'Send')]"
+XP_SIDEBAR_CLOSE_BTN = "//img[@alt='close']"
+XP_CONTINUE_EDITING_BTN = "//span[contains(text(),'Continue Editing')]"
+
+XP_SEND_INVITATION_SEND_BTN = "//span[@class='mat-button-wrapper']//following-sibling::span[contains(text(),'Send')]"
+XP_SEND_INVITATION_CONFIRMATION_POPUP = "//div[contains(text(),'Send Invitation')]"
+XP_SEND_INVITATION_SNACK_BAR_MSG = "//*[contains(text(),'You have successfully ')]"
+XP_SEND_INVITATION_SAVE_BTN = "//span[contains(text(),'Save')]"
+
+# CONSTANTS
+OPTIONAL_MSG = "TEST"
+STATUS = {
+    "STATUS1": "Pending",
+    "STATUS2": "Viewed",
+    "STATUS3": "Accepted"
+}
